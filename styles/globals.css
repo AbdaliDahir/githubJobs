@@ -1,16 +1,31 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.prose a {
+  @apply underline;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.description a {
+  @apply text-white;
 }
 
-* {
-  box-sizing: border-box;
+.how-to-apply a {
+  @apply text-white;
+}
+
+.how-to-apply strong {
+  @apply text-white;
+}
+
+.dark .prose strong,
+.dark .prose h1,
+.dark .prose h2,
+.dark .prose h3,
+.dark .prose h4,
+.dark .prose h5,
+.dark .prose h6 {
+  @apply text-white;
 }
